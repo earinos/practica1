@@ -1,3 +1,9 @@
+"""
+Created on Sat Apr 13 04:30:40 2019
+
+@author: Jin Lung i Eric Ariño
+"""
+
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
@@ -100,9 +106,9 @@ for i in range(1, MAX_PAGES):
                 if counter>preuslength:
                    counter=0
                 
-                else:
+        else:
         # Si no existeix la página i retorna error 400
-                    break 
+            break 
 
 #es genera un fitxer del dataset 
 taula.to_csv('habitaclia_pisos_barcelona_abril_2019.csv',encoding='utf-16')
