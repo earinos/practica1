@@ -100,9 +100,9 @@ for i in range(1, MAX_PAGES):
                 if counter>preuslength:
                    counter=0
                 
-       else:
+                else:
         # Si no existeix la página i retorna error 400
-            break 
+                    break 
 
 #es genera un fitxer del dataset 
 taula.to_csv('habitaclia_pisos_barcelona_abril_2019.csv',encoding='utf-16')
